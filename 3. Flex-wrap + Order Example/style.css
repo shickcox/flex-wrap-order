@@ -1,0 +1,64 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left-column {
+	height: 50%;
+	width: calc(100%/3);
+}
+
+.middle-column {
+	height: 50%;
+	width: calc(100%/3);
+}
+
+.right-column {
+	height: 50%;
+	width: calc(100%/3);
+}
+.green {
+	background-color: #008D24;
+}
+
+.light_blue {
+	background-color: #0B69C0;
+}
+
+.purple {
+	background-color: #3A246D;
+}
+
+/* the right-column is too big so it drops down to a new row and it fills the viewport width */
+@media only screen and (max-width: 1400px) {
+	.right-column {
+		width: 100%;
+	}
+}
+
+/* the right-column is moved in front of (above) the other  divs that are children of the <body> */
+/* the left-column & right-column divs are now on one line because their widths sum to less than 100% */
+@media only screen and (max-width: 1000px) {
+	.right-column {
+		order: 0;
+	}
+	.left-column {
+		order: 1;
+	}
+	.middle-column {
+		order: 2;
+	}
+}
+
+/* the left-column & midle-column are now stretched to 50% and fill up the second row completely */
+@media only screen and (max-width: 600px) {
+	.left-column {
+		width: 50%;
+	}
+	.middle-column {
+		width: 50%;
+	}
+}

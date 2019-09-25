@@ -1,0 +1,28 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.box {
+	height: 250px;
+	width: 250px;
+	display: flex;
+}
+
+.dark_blue {background-color: #2A457A;}
+.light_blue {background-color: #099DD9;}
+.green {background-color: #0C8542;}
+
+
+
+
+/* this is the key line that is different from what we've been doing */
+
+@media only screen and (max-width: 1000px) {
+	/* this page has no media query */
+}

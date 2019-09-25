@@ -1,0 +1,98 @@
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/* remember that we need to use flex-wrap: wrap for any of this to work! */
+	margin: 0;
+}
+
+.box {
+	height: 100%;
+	width: 25%;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap; 
+	height: 50%;
+	width: 100%;
+}
+
+.green { background-color: #008D24; }
+.light_blue { background-color: #0B69C0; }
+.purple { background-color: #3A246D; }
+.red { background-color: #CA1B22; }
+.orange { background-color: #EA6626; }
+
+/* change the order of the boxes */
+@media only screen and (max-width: 1400px) {
+.orange {
+	order: 0;
+}
+.light_blue {
+	order: 1;
+}
+.purple {
+	order: 2;
+}
+.red {
+	order: 3;
+}
+}
+
+/* change the order of the boxes again */
+@media only screen and (max-width: 1000px) {
+.orange {
+	order; 0;
+}
+.purple {
+	order: 1;
+}
+.light_blue {
+	order: 2;
+}
+.red {
+	order: 3;
+}
+}
+
+/* change the order of the boxes one more time */
+@media only screen and (max-width: 600px) {
+.box {
+	height: 100%;
+	width: 50%;
+}
+}
+
+
+
+/* Advanced Challenge */
+.left-column {
+	background-color: #008D24; /* green */
+	
+}
+
+.middle-column {
+	background-color: #0B69C0; /* light_blue */
+	
+}
+
+.right-column {
+	background-color: #3A246D; /* purple */
+	
+}
+
+/* move only the right-column onto a new row */
+@media only screen and (max-width: 1400px) {
+
+}
+
+/* move the two other columns below */
+@media only screen and (max-width: 1000px) {
+
+}
+
+/* swap the order of the left and middle columns */
+@media only screen and (max-width: 600px) {
+
+}
